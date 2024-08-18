@@ -10,13 +10,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Nexaharvest',
   tagline: 'Efficient, Futuristic Planting',
-  favicon: 'img/logo.svg',
+  favicon: 'static/img/logo.ico',
 
   // Set the production url of your site here
   url: 'https://documentation.nexaharvest.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: 'http://nexaharvest.com',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -70,8 +70,12 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
-          },
+            label: 'Introduction',
+          },/*
+          {to: '/docs/NexaharvestBox/Esp32Introduction', label: 'Box', position: 'left'},
+          {to: '/docs/Client/ClientIntroduction', label: 'Client', position: 'left'},
+          {to: '/docs/Server/ServerIntroduction', label: 'Server', position: 'left'},
+          */
         ],
       },
       footer: {
