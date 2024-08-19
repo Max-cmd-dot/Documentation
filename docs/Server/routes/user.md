@@ -29,7 +29,7 @@ Creates a new user and adds the user to a specified group.
   - **409 Conflict:** If a user with the given email already exists.
   - **500 Internal Server Error:** For unexpected server errors.
 
-$$
+```
 router.post("/", async (req, res) => {
   try {
     const { error } = validate(req.body);
@@ -75,7 +75,7 @@ router.post("/", async (req, res) => {
     console.log("Error in creating user: ", error);
   }
 });
-$$
+```
 
 ## Error Handling
 
