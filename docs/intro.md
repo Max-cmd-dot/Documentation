@@ -47,8 +47,8 @@ Nevertheless, here is a small checklist of what you need to install this system:
 
 For the web view:
 
-- [the client](/docs/ClientIntroduction)
-- [the server](/docs/ServerIntroduction)
+- [the client](/docs/Client/Actions)
+- [the server](/docs/Server/models/actions)
 
 running local or global on your own domain
 
