@@ -182,6 +182,11 @@ pio run --target upload
 
 PlatformIO will compile the code and upload it to the ESP32. Ensure that the board is in bootloader mode if necessary (this may require holding down a button on the board).
 
+### Upload a RootCa (only for https request)
+
+Why?
+When you use curl on your Mac to make HTTPS requests, you benefit from the system's built-in certificate trust store, which contains a list of trusted Certificate Authorities (CAs). This trust store is maintained by your operating system and includes a wide range of root certificates from many different CAs. This allows curl to validate the server's SSL/TLS certificate against a known list of trusted CAs without requiring you to provide a specific root certificate. The Esp32 instead no store and limited memory. Therefore you will need to Upload a file via PlatformIO to the ESP32. Just create a folder called data. Then press the PlatformIO Logo on the Sidebar. Go in the Folder `devKit`, into general. press `Build Filesystem Image` then press `Upload Filesystem Image`. (see https://randomnerdtutorials.com/esp32-vs-code-platformio-spiffs/)
+
 ### Monitor Serial Output
 
 To verify that the system is running correctly and to debug any issues, you can monitor the serial output:
